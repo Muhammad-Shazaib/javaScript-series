@@ -1,4 +1,7 @@
 
+// Variable declaration
+// var, let, const
+
 const accountId = 144553;
 let accountEmail = "kzZVb@example.com";
 var accountPassword = "12345";
