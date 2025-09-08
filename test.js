@@ -1,0 +1,1 @@
+console.log("ALLAH HOO AKBAR");
