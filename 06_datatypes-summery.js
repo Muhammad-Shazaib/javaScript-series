@@ -26,3 +26,19 @@ console.log(typeof [1, 2, 3, 4, 5]) // object (array is a type of object)
 console.log(typeof function() {}) // function (used to perform a task)
 
 
+// *************************** memory allocation in primitive and non-primitive data types ***************************
+
+// stack memory and heap memory 
+
+// stack memory - Primitive data types are stored in stack memory (copy value)
+// heap memory - Non-primitive data types are stored in heap memory (reference original value)
+// primitive data types are stored in stack memory (copy value)
+// non-primitive data types are stored in heap memory (reference original value)
+
+// Example of primitive data type (stack memory)
+let myName = "Shazaib";
+let myAge = 31;
+let myName2 = myName; // copy value
+myName2 = "Ali";
+ console.log(myName); // Shazaib
+console.log(myName2); // Ali
