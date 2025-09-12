@@ -38,3 +38,8 @@ console.log("B ", arr1); // [Array: 5 items] // [1, 2, 3, 4, 5]
 const myn2 = arr1.splice(0, 5); // [2, 3, 4] // modifies the original array
 console.log(myn2); // [Array: 2 items] // [1, 5]
 console.log("C ", arr1); // [Array: 3 items] // [2, 3, 4]
+
+
+// Note: slice() does not modify the original array, while splice() does.
+// slice() returns a new array containing the selected elements, while splice() returns an array containing the removed elements.
+// slice() takes two arguments: the start index and the end index (not inclusive).
