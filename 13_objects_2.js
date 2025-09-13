@@ -63,3 +63,38 @@ console.log(Object.values(tinderProfile)); // ["id", "name", "isLoggedIn", "age"
 console.log(Object.entries(tinderProfile)); // ["id", "name", "isLoggedIn", "age", "email", "city"]
 
 console.log(tinderProfile.hasOwnProperty("isLoggedIn")); // true
+
+
+
+const course ={
+    courseName: "JavaScript",
+    price: 999,
+    courseInstructor: "Shazaib",
+}
+
+ // course.price = 1999 // update property
+// course.courseDuration = "3 months" // add property
+// delete course.price // delete property
+// console.log(course); // { courseName: 'JavaScript', price: 999, courseInstructor: 'Shazaib' }
+// console.log(course); // { courseName: 'JavaScript', courseInstructor: 'Shazaib' }
+
+const {courseName: cName, courseInstructor: Instructor} = course // destructuring
+
+console.log(cName); // JavaScript
+console.log(Instructor); // Shazaib
+
+
+// {  // object literal / non-singleton object
+//     home: "Home",
+//     about: "About",
+//     contact: "Contact",
+//     cart: "Cart"
+// }
+
+[  // array of objects
+    {},
+    {},
+    {}
+]
+
+
