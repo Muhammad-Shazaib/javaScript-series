@@ -29,7 +29,32 @@ if(!username) {
         return `${username} just logged in`;
 }
     
-const message = loginUserMessage()
- console.log(message);
+// const message = loginUserMessage()
+//  console.log(message);
 
+// rest operator 
+function calculateCartPrice(...prices) { // rest operator is used to collect all the arguments passed to the function into an array
+    return prices
+}
 
+//console.log(calculateCartPrice(20,30,40))
+
+const user = {
+    username: "shazaib",
+    price: 20
+}
+function handleObject(anyobj) {
+return `Username is ${anyobj.username} and price is ${anyobj.price}`
+}
+
+// const objMessage = handleObject(user) 
+// console.log(objMessage);
+
+const myNewArray = [20,30,40, 50]
+function handlerArray (arr){
+    //return arr[0] + arr[1] + arr[2] + arr[3] // we can use loop also
+   // return arr[0]  // 
+    return arr  //  returning the whole array
+}
+
+console.log(handlerArray(myNewArray));
