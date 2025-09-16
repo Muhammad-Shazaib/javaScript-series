@@ -24,3 +24,49 @@ const c = 301
 //console.log(a); // 100
 // console.log(b); // 200
 // console.log(c); // 300
+
+
+
+function one (){
+
+    const username = "shazaib"
+
+    function two() {
+        const website = "learnwithshazaib.com"
+        console.log(username);
+    }
+
+    // console.log(website);
+    two()
+    
+}
+//one()
+if (true) {
+    const username = "shazaib"
+    if(username === 'shazaib'){
+        const website = "learnwithshazaib.com"
+       // console.log(username + " " + website);
+        
+    }
+   // console.log(website);
+}
+
+// console.log(username);
+
+
+ 
+// ++++++++++++++++++++++++++++++++++++ interesting ++++++++++++++++++++++++++++++++++++++++++++
+console.log(addOne(5)); // 6
+
+function addOne (num){ // function declaration
+    return num + 1
+}
+
+//addOne(5) // 6
+
+console.log(addTwo(5)); // error
+
+const addTwo = function (num){ // function expression
+    return num + 2
+}
+// addTwo(5) // 7
