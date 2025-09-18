@@ -24,7 +24,14 @@
 
 // (??): null or undefined
 let val1;
-val1 = val1 ?? 'default';
-console.log(val1);
+// val1 = 5 ?? 10; // 5
+// val1 = null ?? 10; // 10
+// val1 = undefined ?? 10 ; // 10
+val1 = null ?? 10 ?? 20;
+// console.log(val1);
 
+// **************************** ternary operator ****************************
+// condition ? true : false
 
+const icsTeaPrice = 100;
+icsTeaPrice <= 80 ? console.log("less then 80") : console.log("more then 80");
