@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | learning on youtube</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+function addLang(langName){ // 
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`;
+    document.querySelector('.language').appendChild(li);
+}
+addLang('Python');
+addLang('C++');
+
+ function addOptiLanguage (langName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.language').appendChild(li);
+ }
+addOptiLanguage('Java');
+addOptiLanguage('Ruby'); 
+
+// editing existing element 
+const secondLang = document.querySelector('.language li:nth-child(2)');
+// secondLang.innerHTML = 'TypeScript ';
+const newLi = document.createElement('li');
+newLi.textContent = 'TypeScript';
+secondLang.replaceWith(newLi);
+
+const firstLang = document.querySelector('.language li:first-child');
+firstLang.outerHTML = '<li>phython</li>'
+
+// remove element
+const thirdLang = document.querySelector('.language li:nth-child(3)');  
+thirdLang.remove();
+// or
+// document.querySelector('.language li:nth-child(3)').remove();
+
+</script>
+</html>
