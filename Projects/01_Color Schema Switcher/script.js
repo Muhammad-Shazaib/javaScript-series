@@ -6,12 +6,10 @@ const body = document.querySelector("body");
 
 buttons.forEach(function (button) {
   // console.log(button);
-  button.addEventListener("click", function () {
-    body.style.backgroundColor = button.id;
-
-   // console.log(e);
-   // console.log(e.target);
-    
+  button.addEventListener("click", function (e) {
+    console.log(e);
+    console.log(e.target);
+    //  body.style.backgroundColor = button.id;
 
     if (e.target.id === "grey") {
       body.style.backgroundColor = e.target.id;
