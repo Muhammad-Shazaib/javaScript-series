@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | learning on youtube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Events</h1>
+    <p>Learn about JavaScript events in this comprehensive guide.</p>
+
+    <button>Click me</button>
+
+    <script>
+        // Old way of adding event listeners
+        //    document.querySelector("h1").onclick = function() {
+        //    alert("You clicked the heading!");
+        // };
+
+        // Modern way of adding event listeners
+        // document.querySelector("button").addEventListener("click", function () {
+        //     alert("Button clicked!");
+        // });
+
+        // attachEvent  is an old IE method
+        // document.querySelector("button").attachEvent("onclick", function () {
+        //     alert("Button clicked!");
+        // });
+
+        // jQuery way of adding event listeners
+        // $("button").click(function () {
+        //     alert("Button clicked!");
+        // });
+
+        // document.querySelector("button").addEventListener("click", function (e) { // e is the event object
+        //     console.log(e);
+        //     e.preventDefault(); // prevent default action
+        //     e.stopPropagation(); // stop event bubbling
+        //     alert("Button clicked!");
+        // });
+
+        // document.querySelector("button").addEventListener("click", function (e) {
+        //     console.log("Button clicked!");
+        //     console.log(e.target); // the element that triggered the event
+        //     console.log(e.currentTarget); // the element that the event listener is attached to
+        //     console.log(this); // the element that the event listener is attached to
+        // });
+
+        // document.querySelector("button").addEventListener("click", function (e) {
+        //     console.log("Button clicked!");
+        //     console.log(e.type); // the type of event
+        //     console.log(e.timeStamp); // the time the event was triggered
+        //     console.log(e.clientX, e.clientY); // the mouse position
+        //     console.log(e.altKey, e.ctrlKey, e.shiftKey); // modifier keys
+        // });
+
+        // document.querySelector("button").addEventListener("click", function (e) {
+        //     console.log("Button clicked!");
+        //     console.log(e.bubbles); // does the event bubble
+        //     console.log(e.cancelable); // can the event be canceled
+        //     console.log(e.defaultPrevented); // has preventDefault been called
+        // });
+
+    </script>
+</body>
+
+</html>
